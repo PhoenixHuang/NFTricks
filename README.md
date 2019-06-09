@@ -1,18 +1,18 @@
 # NFTricks
 some tricks for nfeild
 =====
-* 1.Other传值
-* 2.记录时间
-* 3.计算答案数量
-* 4.Control
-* 5.Date
-* 6.检查答案长度
-* 7.在一个码号中可以执行多条语句
-* 8.在一个if语句中也可以执行多条语句
-* 9.IF_Condition
-* 10.String
-* 11.*INCLUDE/*COPY/*EXCLUDE/*PUT
-* 12.品牌联动
+* [1.Other传值](#1.Other传值)
+* [2.记录时间](#2.记录时间)
+* [3.计算答案数量](#3.计算答案数量)
+* [4.Control](#4.Control)
+* [5.Date](#5.Date)
+* [6.检查答案长度](#6.检查答案长度)
+* [7.在一个码号中可以执行多条语句](#7.在一个码号中可以执行多条语句)
+* [8.在一个if语句中也可以执行多条语句](#8.在一个if语句中也可以执行多条语句)
+* [9.IF Condition](#9.IF_Condition)
+* [10.String](#10.String)
+* [11.*INCLUDE/*COPY/*EXCLUDE/*PUT](#11.*INCLUDE/*COPY/*EXCLUDE/*PUT)
+* [12.品牌联动](#12.品牌联动)
 
 # 1.Other传值
 ~~~
