@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~\Desktop\Nfield\GroupRandom.Q.html</title>
+<meta name="Generator" content="Vim/8.1">
+<meta name="plugin-version" content="vim7.4_v2">
+<meta name="syntax" content="odin">
+<meta name="settings" content="number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
+<meta name="colorscheme" content="desert">
+<style type="text/css">
+<!--
+pre { font-family: monospace; color: #ffffff; background-color: #333333; }
+body { font-family: monospace; color: #ffffff; background-color: #333333; }
+* { font-size: 1em; }
+.OdinNumber { color: #f0e68c; }
+.OdinCode { color: #d64f44; font-weight: bold; }
+.LineNr { color: #ffff00; }
+.OdinPosition { color: #add8e6; }
+.OdinString { color: #ffa0a0; }
+.OdinKeyword { color: #00bfff; font-weight: bold; }
+.OdinOperator { color: #ff0000; font-weight: bold; }
+.OdinComment { color: #90ee90; font-style: italic; }
+.OdinArray { color: #ffd700; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr"> 1 </span>
+<span id="L2" class="LineNr"> 2 </span>
+<span id="L3" class="LineNr"> 3 </span><span class="OdinKeyword">*VARS</span> <span class="OdinArray">ORDA8A[999]</span>, CISHU
+<span id="L4" class="LineNr"> 4 </span><span class="OdinComment">**Dummy Question to hold the codes</span>
+<span id="L5" class="LineNr"> 5 </span><span class="OdinKeyword">*QUESTION</span> <span class="OdinNumber">720081</span> <span class="OdinKeyword">*CODES</span> <span class="OdinPosition">844L99</span> <span class="OdinKeyword">*MULTI</span> <span class="OdinKeyword">*DUMMY</span>
+<span id="L6" class="LineNr"> 6 </span><span class="OdinComment">**Dummy Question to hold mutual codes</span>
+<span id="L7" class="LineNr"> 7 </span><span class="OdinKeyword">*QUESTION</span> <span class="OdinNumber">92022</span> <span class="OdinKeyword">*CODES</span> <span class="OdinPosition">943L9</span> <span class="OdinKeyword">*MULTI</span> <span class="OdinKeyword">*DUMMY</span>
+<span id="L8" class="LineNr"> 8 </span>
+<span id="L9" class="LineNr"> 9 </span>
+<span id="L10" class="LineNr">10 </span><span class="OdinKeyword">*REPEAT</span> <span class="OdinNumber">2</span>
+<span id="L11" class="LineNr">11 </span><span class="OdinKeyword">*PUT</span> CISHU [<span class="OdinKeyword">?R</span>]
+<span id="L12" class="LineNr">12 </span><span class="OdinKeyword">*REPEAT</span> <span class="OdinNumber">5</span> <span class="OdinKeyword">*RANDOM</span>
+<span id="L13" class="LineNr">13 </span><span class="OdinComment">**EXCLUDE Q720081 Q720081</span>
+<span id="L14" class="LineNr">14 </span><span class="OdinKeyword">*IF</span> [CISHU <span class="OdinOperator">=</span> <span class="OdinNumber">1</span> <span class="OdinOperator">&amp;</span> <span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">1</span>] <span class="OdinKeyword">*INCLUDE</span> <span class="OdinNumber">Q720081</span> [<span class="OdinNumber">1</span> TO <span class="OdinNumber">4</span>]
+<span id="L15" class="LineNr">15 </span><span class="OdinKeyword">*IF</span> [CISHU <span class="OdinOperator">=</span> <span class="OdinNumber">1</span> <span class="OdinOperator">&amp;</span> <span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">2</span>] <span class="OdinKeyword">*INCLUDE</span> <span class="OdinNumber">Q720081</span> [<span class="OdinNumber">11</span> TO <span class="OdinNumber">13</span>]
+<span id="L16" class="LineNr">16 </span><span class="OdinKeyword">*IF</span> [CISHU <span class="OdinOperator">=</span> <span class="OdinNumber">1</span> <span class="OdinOperator">&amp;</span> <span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">3</span>] <span class="OdinKeyword">*INCLUDE</span> <span class="OdinNumber">Q720081</span> [<span class="OdinNumber">21</span> TO <span class="OdinNumber">24</span>]
+<span id="L17" class="LineNr">17 </span><span class="OdinKeyword">*IF</span> [CISHU <span class="OdinOperator">=</span> <span class="OdinNumber">1</span> <span class="OdinOperator">&amp;</span> <span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">4</span>] <span class="OdinKeyword">*INCLUDE</span> <span class="OdinNumber">Q720081</span> [<span class="OdinNumber">31</span> TO <span class="OdinNumber">34</span>]
+<span id="L18" class="LineNr">18 </span><span class="OdinKeyword">*IF</span> [CISHU <span class="OdinOperator">=</span> <span class="OdinNumber">1</span> <span class="OdinOperator">&amp;</span> <span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">5</span>] <span class="OdinKeyword">*INCLUDE</span> <span class="OdinNumber">Q720081</span> [<span class="OdinNumber">41</span> TO <span class="OdinNumber">43</span>]
+<span id="L19" class="LineNr">19 </span><span class="OdinKeyword">*IF</span> [CISHU <span class="OdinOperator">=</span> <span class="OdinNumber">2</span> <span class="OdinOperator">&amp;</span> <span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">1</span>] <span class="OdinKeyword">*INCLUDE</span> <span class="OdinNumber">Q720081</span> [<span class="OdinNumber">51</span> TO <span class="OdinNumber">52</span>]
+<span id="L20" class="LineNr">20 </span><span class="OdinKeyword">*IF</span> [CISHU <span class="OdinOperator">=</span> <span class="OdinNumber">2</span> <span class="OdinOperator">&amp;</span> <span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">2</span>] <span class="OdinKeyword">*INCLUDE</span> <span class="OdinNumber">Q720081</span> [<span class="OdinNumber">61</span> TO <span class="OdinNumber">62</span>]
+<span id="L21" class="LineNr">21 </span><span class="OdinKeyword">*IF</span> [CISHU <span class="OdinOperator">=</span> <span class="OdinNumber">2</span> <span class="OdinOperator">&amp;</span> <span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">3</span>] <span class="OdinKeyword">*INCLUDE</span> <span class="OdinNumber">Q720081</span> [<span class="OdinNumber">71</span> TO <span class="OdinNumber">72</span>]
+<span id="L22" class="LineNr">22 </span><span class="OdinKeyword">*IF</span> [CISHU <span class="OdinOperator">=</span> <span class="OdinNumber">2</span> <span class="OdinOperator">&amp;</span> <span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">4</span>] <span class="OdinKeyword">*INCLUDE</span> <span class="OdinNumber">Q720081</span> [<span class="OdinNumber">81</span> TO <span class="OdinNumber">82</span>]
+<span id="L23" class="LineNr">23 </span><span class="OdinKeyword">*IF</span> [CISHU <span class="OdinOperator">=</span> <span class="OdinNumber">2</span> <span class="OdinOperator">&amp;</span> <span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">5</span>] <span class="OdinKeyword">*INCLUDE</span> <span class="OdinNumber">Q720081</span> [<span class="OdinNumber">91</span> TO <span class="OdinNumber">93</span>]
+<span id="L24" class="LineNr">24 </span><span class="OdinKeyword">*ENDREP</span>
+<span id="L25" class="LineNr">25 </span><span class="OdinKeyword">*ENDREP</span>
+<span id="L26" class="LineNr">26 </span>
+<span id="L27" class="LineNr">27 </span><span class="OdinComment">**now Q720081 has a group random code</span>
+<span id="L28" class="LineNr">28 </span><span class="OdinComment">**transfer the code to array OrdA8a</span>
+<span id="L29" class="LineNr">29 </span><span class="OdinKeyword">*PUT</span> NUM [<span class="OdinNumber">0</span>]
+<span id="L30" class="LineNr">30 </span><span class="OdinKeyword">*REPEAT</span> <span class="OdinNumber">99</span> <span class="OdinKeyword">*CONTROL</span> <span class="OdinNumber">Q720081</span> W
+<span id="L31" class="LineNr">31 </span><span class="OdinKeyword">*PUT</span> NUM [NUM + <span class="OdinNumber">1</span>]
+<span id="L32" class="LineNr">32 </span><span class="OdinKeyword">*PUT</span> ORDA8A[NUM] [<span class="OdinKeyword">?R</span>]
+<span id="L33" class="LineNr">33 </span><span class="OdinKeyword">*ENDREP</span>
+<span id="L34" class="LineNr">34 </span>
+<span id="L35" class="LineNr">35 </span><span class="OdinComment">**We use OrdA8a to control the random</span>
+<span id="L36" class="LineNr">36 </span><span class="OdinKeyword">*REPEAT</span> <span class="OdinNumber">99</span> <span class="OdinKeyword">*FIELD</span> <span class="OdinPosition">952L9999</span> <span class="OdinKeyword">*ORDER</span> ORDA8A <span class="OdinKeyword">*CONTROL</span> <span class="OdinNumber">Q720081</span> W
+<span id="L37" class="LineNr">37 </span><span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;&quot;</span>
+<span id="L38" class="LineNr">38 </span><span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;&quot;</span>
+<span id="L39" class="LineNr">39 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">1</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“悦”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌适合热爱驾驶的人&quot;</span>
+<span id="L40" class="LineNr">40 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">2</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“悦”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌适合真正享受生活的人&quot;</span>
+<span id="L41" class="LineNr">41 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">3</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“悦”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌激发快乐的感觉&quot;</span>
+<span id="L42" class="LineNr">42 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">4</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“悦”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车使蜿蜒道路上的行驶充满乐趣&quot;</span>
+<span id="L43" class="LineNr">43 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">11</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“美感”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车外型独特有吸引力&quot;</span>
+<span id="L44" class="LineNr">44 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">12</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“美感”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车其设计具有现代感且非同凡响&quot;</span>
+<span id="L45" class="LineNr">45 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">13</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“美感”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车其设计永恒而优雅&quot;</span>
+<span id="L46" class="LineNr">46 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">21</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“动感”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车是运动型的&quot;</span>
+<span id="L47" class="LineNr">47 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">22</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“动感”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌倡导公平原则&quot;</span>
+<span id="L48" class="LineNr">48 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">23</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“动感”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌乐享竞技&quot;</span>
+<span id="L49" class="LineNr">49 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">24</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“动感”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌活力四射&quot;</span>
+<span id="L50" class="LineNr">50 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">31</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“创新”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌是创新的&quot;</span>
+<span id="L51" class="LineNr">51 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">32</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“创新”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌积极应对新的挑战&quot;</span>
+<span id="L52" class="LineNr">52 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">33</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“创新”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌是新技术的领导者&quot;</span>
+<span id="L53" class="LineNr">53 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">34</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“创新”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌拥有能带来真正益处的解决之道&quot;</span>
+<span id="L54" class="LineNr">54 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">41</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们把动感驾驶与环保义务这两个方面结合起来谈谈&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车在更少排放的基础上实现动感驾驶&quot;</span>
+<span id="L55" class="LineNr">55 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">42</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们把动感驾驶与环保义务这两个方面结合起来谈谈&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车在更低油耗的基础上实现动感驾驶&quot;</span>
+<span id="L56" class="LineNr">56 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">43</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们把动感驾驶与环保义务这两个方面结合起来谈谈&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车在谨守企业良知的基础上实现动感驾驶&quot;</span>
+<span id="L57" class="LineNr">57 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">51</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“服务”&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌友好的经销商给顾客以宾至如归的感觉&quot;</span>
+<span id="L58" class="LineNr">58 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">52</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“服务”&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌提供卓越的汽车服务&quot;</span>
+<span id="L59" class="LineNr">59 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">61</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“品质”&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车做工精良&quot;</span>
+<span id="L60" class="LineNr">60 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">62</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“品质”&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌在其汽车上使用高品质材料&quot;</span>
+<span id="L61" class="LineNr">61 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">71</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“尊贵”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌声誉卓著(体现成就)&quot;</span>
+<span id="L62" class="LineNr">62 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">72</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“尊贵”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车体现驾驶者懂得享受高品质的生活&quot;</span>
+<span id="L63" class="LineNr">63 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">81</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“安全性”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车有绝对安全的操作性能&quot;</span>
+<span id="L64" class="LineNr">64 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">82</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“安全性”这个特征&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车在意外时提供最大的安全保护&quot;</span>
+<span id="L65" class="LineNr">65 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">91</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“责任感”&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌制造的汽车对环境造成的影响小/环保&quot;</span>
+<span id="L66" class="LineNr">66 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">92</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“责任感”&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌代表在利用自然资源方面有责任心&quot;</span>
+<span id="L67" class="LineNr">67 </span><span class="OdinKeyword">*IF</span> [<span class="OdinKeyword">?R</span> <span class="OdinOperator">=</span> <span class="OdinNumber">93</span>] <span class="OdinKeyword">*PUT</span> TTTA7 <span class="OdinString">&quot;现在让我们来谈谈“责任感”&quot;</span> <span class="OdinKeyword">*PUT</span> TXTA7 <span class="OdinString">&quot;这个品牌具社会责任感&quot;</span>
+<span id="L68" class="LineNr">68 </span><span class="OdinKeyword">*QUESTION</span> <span class="OdinNumber">20081</span> <span class="OdinKeyword">*CODES</span> <span class="OdinPosition">1L99</span> <span class="OdinKeyword">*MULTI</span> <span class="OdinKeyword">*VAR</span> <span class="OdinString">&quot;A8A&quot;</span>
+<span id="L69" class="LineNr">69 </span>A8A.
+<span id="L70" class="LineNr">70 </span>下面会出现描述语句，请为每个描述语句选择 <span class="OdinKeyword">*FONT</span> <span class="OdinNumber">5</span> 适合 <span class="OdinKeyword">*FONT</span> <span class="OdinNumber">0</span> 该语句的 <span class="OdinKeyword">*FONT</span> <span class="OdinNumber">5</span> 所有 <span class="OdinKeyword">*FONT</span> <span class="OdinNumber">0</span> 的品牌。
+<span id="L71" class="LineNr">71 </span><span class="OdinKeyword">*FONT</span> <span class="OdinNumber">5</span> （多选题） <span class="OdinKeyword">*FONT</span> <span class="OdinNumber">0</span>
+<span id="L72" class="LineNr">72 </span><span class="OdinKeyword">*?</span> TTTA7
+<span id="L73" class="LineNr">73 </span><span class="OdinKeyword">*FONT</span> <span class="OdinNumber">7</span> <span class="OdinKeyword">*?</span> TXTA7 <span class="OdinKeyword">*FONT</span> <span class="OdinNumber">0</span>
+<span id="L74" class="LineNr">74 </span>
+<span id="L75" class="LineNr">75 </span><span class="OdinCode">1</span>:奥迪
+<span id="L76" class="LineNr">76 </span><span class="OdinCode">2</span>:宝马
+<span id="L77" class="LineNr">77 </span><span class="OdinCode">4</span>:奔驰
+<span id="L78" class="LineNr">78 </span><span class="OdinCode">5</span>:保时捷
+<span id="L79" class="LineNr">79 </span><span class="OdinCode">6</span>:凯迪拉克
+<span id="L80" class="LineNr">80 </span><span class="OdinCode">7</span>:特斯拉
+<span id="L81" class="LineNr">81 </span><span class="OdinCode">99</span>:以上品牌均不符合 <span class="OdinKeyword">*NOCON</span> <span class="OdinKeyword">*NMUL</span>
+<span id="L82" class="LineNr">82 </span>
+<span id="L83" class="LineNr">83 </span><span class="OdinKeyword">*ENDREP</span>
+<span id="L84" class="LineNr">84 </span>
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
