@@ -36,7 +36,7 @@ some tricks for nfeild
 **重置计时器
 *PUT STOPWATCH[3] [0]
 ~~~
-**Stopwatch[3] can be used as a timer that you have to reset yourself setting the value to 0. This timer starts as soon as the interview is started or once it it reset. 
+Stopwatch[3] can be used as a timer that you have to reset yourself setting the value to 0. This timer starts as soon as the interview is started or once it it reset. 
 ------------------------------------------------------------------------------------------------------------
 # 3.计算答案数量
 ~~~
