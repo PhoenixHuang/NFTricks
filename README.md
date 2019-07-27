@@ -165,18 +165,19 @@ STRUPPER(<string>)
 How old are you?
 1:15-29
 2:30-45
-*put myQ6num Q6   **myQ6num=1
-*put myQ6num [Q6] **myQ6num=1
+*put myQ6num Q6   myQ6num=1
+*put myQ6num [Q6] myQ6num=1
 
-*put myQ6Text Q6   **myQ6Text=1
-*put myQ6Text [Q6] **myQ6Text=1
+*put myQ6Text Q6   myQ6Text=1
+*put myQ6Text [Q6] myQ6Text=1
+
 在这里, Q6加不加[], 是vars还是textvars, 结果都一样, 都是取得码号
 
 *put myQ6Text Q6,2
 if myQ6Text is vars, then myQ6Text=2, 传递的是码号
 if myQ6Text is textvars, then myQ6Text="30-45", 传递的是码文本
 
-*put myQ6Text [Q6,2]  **这里加[]结果就完全不同了
+*put myQ6Text [Q6,2]  这里加[]结果就完全不同了
 ~~~
 在这里,[Q6,2]变成了一个bool变量. 如果Q6选了2, 则myQ6Text=1; 如果Q6没有选2, 则myQ6Text=0
 ------------------------------------------------------------------------------------------------------------
